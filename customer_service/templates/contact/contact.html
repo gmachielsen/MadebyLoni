@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block metadiscription %}
+  Contact Made by Loni
+{% endblock %}
+{% block title %}
+  Contact
+{% endblock %}
+{% block content %}
+<section id="contact">
+<br>
+<div class="container-fluid">
+  {% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-warning alert-dismissable" role="alert">
+      <button class="close" data-dismiss="alert">
+              <small><sup>X</sup></small>
+          </button>
+      {{ message }}
+    </div><br/>
+  {% endfor%}
+
+{% endif %}
+</div>
+<br>
+<div class="row justify-content-center">
+  <div class="contact text-center">
+    <br>
+    <h2>Contact</h2>
+    <br>
+    <p>If you have any enquiries regarding to your product or this website or the brand "Made by Loni" feel free to contact us via <a  style="text-decoration: none; color: black;" href="https://wa.me/003111864118"><b>WhatsApp</b></a>  or via  <a  style="text-decoration: none; color: black;" href="mailto:g.machielsen@gmail.com"><b>E-mail</b></a> or via the contactform below.</p>
+    <br>
+    <br>
+  </div>
+  <div class="col-10">
+    <div class="card">
+      <div class="card-body">
+          <h5 style="text-align: center">Contact Form</h5>
+            <form method="POST" enctype="multipart/form-data">
+                   {% csrf_token %}
+                   {{ post | crispy }}
+                   <button type="submit" class="btn btn-info">Send</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+
+
+
+{% endblock %}

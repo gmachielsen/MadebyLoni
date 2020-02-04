@@ -1,0 +1,176 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-item {
+  letter-spacing: .2em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.my_footer {
+  background-color: #f8f9fa;
+  height: 60px;
+}
+
+.my_footer p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+/* category html */
+
+.my_row_class {
+  padding-top: 15px;
+}
+
+.my_row_class .mx-auto p {
+  color: #000;
+  font-size: 12px;
+}
+
+.my_row_class .mx-auto p a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.my_image {
+  width: 100%;
+  height: auto;
+}
+
+.my_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.my_image_padding {
+  padding: 5px;
+}
+
+.my_bottom_margin {
+  margin-bottom: 10px;
+}
+
+.card-body h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/* Product page */
+
+.my_prod_row_class {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.my_prod_row_class .mx-auto p {
+  color: #000;
+  font-size: 12px;
+}
+
+.my_prod_row_class .mx-auto p a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.my_prod_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.my_prod_text {
+  padding-right: 20px;
+}
+
+
+/* About page */
+.about h2 {
+  letter-spacing: .2em;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.lonneke {
+  background: url(../media/lonneke.png);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.text p {
+  letter-spacing: .2em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* contact page */
+
+
+.contactpage {
+  justify-content: center;
+}
+
+.contact-form-area{
+    bottom:40px;
+    background:rgba(0, 0, 0, 0.6);
+    padding:30px;
+    width:85%;
+    border:1px solid #cdcaca;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    margin-bottom:30px;
+    -ms-border-radius:5px;
+    box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+    -webkit-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+    -moz-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+    -ms-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+
+}
+.contact-form-area form h3{
+    font-size:36px;
+    color:#fff;
+    font-family: 'latobold';
+    margin-bottom:20px;
+}
+.form-control {
+    height: 35px;
+    border: none;
+}
+.contact-form-area form .contact-btn{
+    background: #dcdcdc;
+    padding: 10px 70px;
+    color: #000000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contact-form-area form .contact-btn:hover{
+    background:#fff;
+}
+
+/* end */
+/* contact */
+.contact h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: 'Roboto', sans-serif;
+}
+/* end */

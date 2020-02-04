@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block metadescription %}
+	{{ product.description|truncatewords:155 }}
+{% endblock %}
+{% block title %}
+	{{ product.name }}
+{% endblock %}
+{% block content %}
+	<div class="row my_prod_row_class">
+		<div class="mx-auto">
+			<p><a href="{% url 'shop:allProdCat' %}">Home</a> | <a href="{{ product.category.get_url }}">{{ product.category }}</a> | {{ product.name }}</p>
+		</div>
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+					<div div style="min-width: 18rem;">
+						<img style="width: 100%" src="{{product.image.url}}" alt="{{product.name}}">
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+					<div>
+						<h1 class="my_prod_title">{{product.name}}</h1>
+						<p>{{product.price}} euro</p>
+						<p class="my_title">Product Description</p>
+						<p class="text-justify my_prod_text">{{product.description}}</p>
+						{% if product.type != 'B' %}
+							<form method="GET" class="form-inline">
+							     {% csrf_token %}
+							    <div style="display: inline-flex" class="product form-control " name="size">{{ psize }}</div>
+							</form>
+						{% else %}
+						{% endif %}
+						<!-- {% if not in_wishlist %}
+							<form class="inline product_hearts" action="" method="post" id="empty_heart_form">
+						{% csrf_token %}
+								<input type="hidden" name="id" value="{{product.id}}" />
+								<button type="submit" class="btn">
+								<i id="empty_heart_icon" class="far fa-heart fa-2x" type="submit"></i>
+								</button>
+							</form>
+						{% else %}
+						<form class="inline product_hearts" action="" method="post" id="full_heart_form">
+						{% csrf_token %}
+							<button type="submit" class="btn">
+							<i id="full_heart_icon" class="fas fa-heart" type="submit"></i>
+							</button>
+						</form>
+						{% endif %} -->
+						<br>
+						<div style="display: flex; flex-direction: row;" class="buttons">
+							{% if user.is_authenticated and wishlist.name == product.name %}
+							<a style="margin: 10px;" class= "btn btn-secondary" href="{% url 'wishlist:delete_item_wishlist' product.id %}">Delete item from Wishlist</a>
+							{% elif user.is_authenticated %}
+							<br>
+							<a style="margin: 10px;" class= "btn btn-secondary" href="{% url 'wishlist:add_to_wishlist' product.id %}">Add to Wishlist</a>
+							{% else %}
+							<a style="margin: 10px;" class= "btn btn-secondary" href="{% url 'signup' %}">Add to Wishlist</a>
+							{% endif %}
+
+
+							{% if product.stock <= 0 %}
+								<p class="text-justify my_prod_text"><b>Out of Stock</b></p>
+							{% else %}
+								<br>
+								<br>
+								<a style="margin: 10px;" class= "btn btn-secondary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+							{% endif %}
+						</div>
+					<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- {% for image in product_images %}
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="extraimages">
+            {% if forloop.counter == 1 %}
+            <div class="col-sm-4">
+            <img width="100%" id="1" class="thumb normal" src="{{MEDIA_URL}}{{image.images.url}}" alt="" onmouseover="preview(this)">
+            </div>
+            {% endif %}
+            {% if forloop.counter == 2 %}
+            <div class="col-sm-4">
+            <img width="100%" id="2" class="thumb normal" src="{{MEDIA_URL}}{{image.images.url}}" alt="" onmouseover="preview(this)">
+            </div>
+            {% endif %}
+            {% if forloop.counter == 2 %}
+            <div class="col-sm-4">
+            <img style="width: 100%;" id="3" class="thumb normal" src="{{MEDIA_URL}}{{image.images.url}}" alt="" onmouseover="preview(this)">
+            </div>
+            {% endif %}
+
+          </div>
+          </div>
+         </div>
+        {% endfor %} -->
+
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+{% endblock %}

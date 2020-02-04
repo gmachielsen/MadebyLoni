@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{% block metadiscription %}{% endblock %}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette|Great+Vibes|Parisienne|Playball|Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}"> -->
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-fluid bg-light navbar-fixed-top my_top_navbar_div">
+      {% include 'top-navbar.html' %}
+    </div>
+    {% include 'header.html' %}
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock %}
+  </div>
+    {% include 'footer.html' %}
+  <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+</body>

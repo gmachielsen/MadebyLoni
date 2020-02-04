@@ -1,0 +1,286 @@
+#coverpage {
+  height: 95vh !important;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+@media(min-width:799px) {
+  #navbarNav {
+    margin-top: 50px;
+  }
+}
+
+
+.navbar-brand {
+  /* background-image: url("LogoMakr_22DTJ9.png"); */
+  /* width: 50px;
+  background-size: cover; */
+  margin: 15px;
+}
+
+.navbar-brand p {
+  color: silver;
+  /* font-family: 'Courgette', cursive; */ /* lelijk */
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Sacramento', cursive;
+  /* font-family: 'Cookie', cursive; */ /* lelijk */
+  /* font-family: 'Parisienne', cursive; /* matig */
+  /* font-family: 'Playball', cursive; */ /* lelijk */
+  font-size: 32px;
+}
+
+.image {
+  background: url(../media/women.png);
+  height: 95vh;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,.075)!important;
+}
+
+.bg-light {
+    background-color: rgba(0,0,0,.075)!important;
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+  color: white!important;
+  text-align: center;
+  letter-spacing: .2em!important;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+
+.nav-item .nav-link:hover {
+  text-transform: uppercase;
+  color: silver!important;
+  text-align: center;
+  letter-spacing: .2em!important;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+/* .navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.3)!important;
+} */
+.navbar-nav {
+  justify-content: center;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.hero-text h6 {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #d2d2d2;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-weight: normal;
+}
+
+.hero-text button {
+    margin-top: 20px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 65px;
+    color: white;
+    background-color: transparent;
+    opacity: 1;
+    border: solid 1px white;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em!important;
+    margin: 10px 10px;
+
+}
+
+.hero-text button:hover {
+    background-color: black;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: 1px solid gray !important;
+    /* border-color: rgba(247, 247, 247, 0.1); */
+}
+
+.bar {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 8px 0;
+}
+
+.header h2 {
+  color: silver;
+  /* font-family: 'Courgette', cursive; */ /* lelijk */
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Sacramento', cursive;
+  /* font-family: 'Cookie', cursive; */ /* lelijk */
+  /* font-family: 'Parisienne', cursive; /* matig */
+  /* font-family: 'Playball', cursive; */ /* lelijk */
+  font-size: 32px;
+}
+
+.arrivals h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: 'Roboto', sans-serif;
+
+}
+/* footer */
+/* .footer-top {
+  display: flex!important;
+  list-style: none;
+  margin: 0px;
+  text-align: center;
+} */
+
+footer {
+  justify-content: center;
+}
+
+.fab {
+  color: gray;
+}
+
+/* contact */
+
+.section {
+  position: relative;
+  width: 900px;
+  max-width: 80%;
+  border: 2px solid #333;
+  border-top: none;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.section h1 {
+  position: relative;
+  margin-top: -14px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+
+.top-border{
+  position: absolute;
+  height: 2px;
+  width: 24%;
+  background-color: #333;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+@media (max-width: 685px) {
+.top-border {
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 40px auto;
+  line-height: 30px;
+}
+
+.section a {
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 440px;
+  max-width: 80%;
+  background-color: #333;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.section a:hover {
+  background-color: #1D222D;
+}
+
+.section a:link, .section a:visited, .section a:link:hover, .section a:visited:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .top-border {
+    display: none;
+  }
+  .section {
+  border-top: 2px solid #333;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
+}
+
+/* end */
+
+/* blog */
+
+.blog h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blog p {
+  /* font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: 'Roboto', sans-serif; */
+}
+
+.blogsection a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 10px 65px;
+  color: black;
+  background-color: transparent;
+  opacity: 1;
+  border: solid 1px black;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em!important;
+  margin: 10px 10px;
+}
+
+/* endblog */

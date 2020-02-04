@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block metadescription %}
+	{{ product.description|truncatewords:155 }}
+{% endblock %}
+{% block title %}
+	wishlist
+{% endblock %}
+{% block content %}
+<br>
+<h1 style="text-align: center;   font-family: 'Roboto', sans-serif; text-transform: uppercase;">wishlist</h1>
+
+<div class="container">
+	<div style="justify-content: center;" class="row mx-auto">
+		{% if not items %}
+      <div class="text-center">
+        <br>
+        <h2 class="text-center my_title">
+            Your wishlist is empty
+        </h2>
+        <br>
+        <p class="text-center">
+          Please click <a href="{% url 'shop:allProdCat' %}">here</a> to continue shopping.
+        </p>
+      </div>
+		{% endif %}
+		{% for item in items %}
+		 <div class="my_bottom_margin col-6 col-sm-6 col-md-4 col-lg-4" style="padding-left: 6px; padding-right: 6px;">
+			 <div class="card text-center" style="">
+				 <a href="{{ item.wished_item.get_url }}"><img class="card-img-top my_image" src="{{ item.wished_item.image.url }}" alt="{{ item.wished_item.name }}"></a>
+				 <div class="card-body">
+					 <h4>{{ item.wished_item.name }}</h4>
+					 <p>{{ item.wished_item.price }}</p>
+				 </div>
+			 </div>
+		 </div>
+	 {% endfor %}
+	</div>
+</div>
+<br>
+{% endblock %}

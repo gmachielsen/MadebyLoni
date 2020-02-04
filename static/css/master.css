@@ -1,0 +1,19 @@
+#coverpage {
+  height: 95vh !important;
+}
+.image {
+  background: url(../media/women.png);
+  height: 95vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar {
+  opacity: -0.1!important;
+}
+
+.navbar-nav {
+  margin: 20px 20px 20px 20px;
+  color: white;
+  opacity: 1;
+}
