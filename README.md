@@ -232,8 +232,7 @@ The things which I have added to this project is:
 - the about page. 
 - static folder partly written by me
 - static files partly written by me
-
--I have also done little changes in some front end stuff and I have changed the login. On the udemy course if the customer is registered it need to login again, I have changed that, now once the customer is registered it will automatically logged in. 
+- I have also done little changes in the front end and I have changed the login. On the udemy course if the customer is registered it need to login again, I have changed that, now once the customer is registered it will automatically logged in. 
 
 I also want to thank codeinstitute as this time has gave me the opportunity to learn frontend and django. I am happy that I can set up a blog and online shop on my own. Codeinstitute has also given me trust in coding as at the beginning of the course I had zero knowledge about coding! And now I have the confidence to build websites!
 
