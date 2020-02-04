@@ -2,6 +2,12 @@
 
 view website https://projectfourecommerce.herokuapp.com/
 
+to enter the backend
+username: test
+password: test
+
+To pay:
+
 pay with details: 4242 4242 4242 4242
 11/22   123
 
