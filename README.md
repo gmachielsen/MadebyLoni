@@ -207,7 +207,16 @@ I have been working on this project with a lot of fun and passion, but I have al
 
 - Productphoto zoom: The productphoto zoom is a functionality that the photo zooms in when the cursor hovers over the product photo. I have decided that this only will make sence in combination with the thumbnail carousel. 
 
-- product filtering. I have decided to not implement product filtering as this will not fit in my current layout. Further reason is, that I find it hard to find a solution to get this very mobile friendly. I miss the knowledge to make this functionality mobile friendly, but I have the knowledge to create filter functionality and I want to implement that after my education at code institute. 
+- product filtering: I have decided to not implement product filtering as this will not fit in my current layout. Further reason is, that I find it hard to find a solution to get this very mobile friendly. I miss the knowledge to make this functionality mobile friendly, but I have the knowledge to create filter functionality and I want to implement that after my education at code institute. 
 
-- product sorting 
+- product sorting: product sorting is a feature which I decided to not implement as I will mess up my layout. And I sorting goes hand in hand with productfiltering. So I decided to do it or to do it not.
 
+- product sharing: this is a feature which I decided to not implement as I am running out of time. I want to implement this feature after my study for code institute. 
+
+- Better product management so stock per color and size: This is much harder to implement, so I decided to not implement this for this project as perfect is the enimy of finished. 
+
+- implement ideal: this is also a feature which takes a lot of time, therefore I decided to not implement this. Ideal is a payment feature in the Netherlands (around 90 percent of all online transactions in the Netherlands are done with ideal). 
+
+# Credentials 
+
+I really want to thank udemy and the instructor on udemy who have made a course. I have implement a lot of features. The whole product (by category), cart, payment and order management in this project with the front end included is thanks to udemy. The things which I have added to this project is the landingpage, blog app, customer service app and the wishlist app and the about page. I also want to thank codeinstitute as this time has gave me the opportunity to learn frontend and django. I am happy that I can set up a blog and online shop on my own. Codeinstitute has also given me trust in coding as at the beginning of the course I had zero knowledge about coding! And now I am motivated to implement difficult features!. 
