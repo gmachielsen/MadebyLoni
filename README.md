@@ -56,7 +56,7 @@ The website has the following pages:
 
 # Design
 
-UX and UI design ideas were taken online from https://drive.google.com/file/d/1ZcnGMBVTmVKyvBEkYT38ck_HfTg-KHri/view I saw a picture. Which gave me the inspiration to make the whole website. Further I have followed a course on Udemy: https://www.udemy.com/course/develop-a-shopping-cart-website-with-django-2-and-python-3/learn/lecture/9054068#overview 
+UX and UI design ideas were taken online from https://drive.google.com/file/d/1ZcnGMBVTmVKyvBEkYT38ck_HfTg-KHri/view I saw a picture. Which gave me the inspiration to make the whole website. Further I have followed a course on Udemy: https://www.udemy.com/course/develop-a-shopping-cart-website-with-django-2-and-python-3/learn/lecture/9054068#overview this has gave me the knowledge to build the shop app, order and cart app. 
 
 Shop logo was created using a fontawesome style.
 
@@ -193,4 +193,21 @@ This contains the css, javascripts and media folders in order to save all the st
 # staticfiles
 This contains the css, javascripts and media folders in order to save all the static data from the static folder. So staticfiles are the blueprint of the static folder in order to pass the files over to AWS cloud.
 
+# deployment
+The deployment is via AWS cloud and HEROKU.
+
+
+# Dilemma's
+
+I have been working on this project with a lot of fun and passion, but I have also experienced dilemma's in building it. I have seen that a website is never finished and that the enimy of finished is perfect! So still I have quite a lot features I wanted to implement such as:
+
+- social media login: although I have added an social media login with facebook in my third steam project, it's cost time and time to set up special accounts and to get them verified, so that's the reason why I decided to not implement it. 
+
+- thumbnail carousel on the productpage: a thumbnail carousel on productpage provides visitors the opportunity to see more productphoto's. Although I have made the backend for this feature. It cost time to find the perfect jquery implementation. I surely want to that, but I decided that this feature will be outside the scope of this project. 
+
+- Productphoto zoom: The productphoto zoom is a functionality that the photo zooms in when the cursor hovers over the product photo. I have decided that this only will make sence in combination with the thumbnail carousel. 
+
+- product filtering. I have decided to not implement product filtering as this will not fit in my current layout. Further reason is, that I find it hard to find a solution to get this very mobile friendly. I miss the knowledge to make this functionality mobile friendly, but I have the knowledge to create filter functionality and I want to implement that after my education at code institute. 
+
+- product sorting 
 
