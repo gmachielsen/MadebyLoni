@@ -213,7 +213,23 @@ I have been working on this project with a lot of fun and passion, but I have al
 
 # Credentials 
 
-I really want to thank udemy and the instructor on udemy who have made a course. I have implement all the features from the udemy course such as the whole product (by category), cart, payment and order management with the front end included and of course the search app. The things which I have added to this project is the landingpage, blog app, customer service app and the wishlist app and the about page. I have also done little changes in some front end stuff and I have changed the login. On the udemy course if the customer is registered it need to login again, I have changed that, now once the customer is registered it will automatically logged in. I also want to thank codeinstitute as this time has gave me the opportunity to learn frontend and django. I am happy that I can set up a blog and online shop on my own. Codeinstitute has also given me trust in coding as at the beginning of the course I had zero knowledge about coding! And now I have the confidence to build websites!
+I really want to thank udemy and the instructor on udemy who have made a course. I have implement all the features from the udemy course which results that the following apps (its backend and fronted are taken over from that udemy course):
+
+- cart app
+- search app
+- order app
+- shop app
+
+The things which I have added to this project is:
+
+- the landingpage
+- blog app 
+- customer service app 
+- wishlist app
+- the about page. 
+-I have also done little changes in some front end stuff and I have changed the login. On the udemy course if the customer is registered it need to login again, I have changed that, now once the customer is registered it will automatically logged in. 
+
+I also want to thank codeinstitute as this time has gave me the opportunity to learn frontend and django. I am happy that I can set up a blog and online shop on my own. Codeinstitute has also given me trust in coding as at the beginning of the course I had zero knowledge about coding! And now I have the confidence to build websites!
 
 
 https://github.com/radlad7/PyShop
