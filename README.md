@@ -3,24 +3,18 @@
 view website https://projectfourecommerce.herokuapp.com/
 
 to enter the backend
-username: test
-password: test
+
+-username: test
+-password: test
 
 To pay:
 
 pay with details: 4242 4242 4242 4242
 11/22   123
 
+In order to see the orderhistory please note that the email whichyou registered with must be the same as the email you ordered with. 
 
-Made by Loni
-Table of Contents
-Intro and goals
-Pages
-Design
-Pages
-Functionality
-Validation and Testing
-Deployment
+
 
 #Intro
 This is Code Institute Stream Four Project. As project four should be a fullstack webapplication with a buildin payment functionality I have decided to make webshop. The name of the webshop is "Made by Loni" is inspiration of my sister called "Lonneke Machielsen". In her freetime she is making bracelets. It was my fantasy to build a webshop with my sister as brand. 
