@@ -100,6 +100,7 @@ def signupView(request):
 			customer_group = Group.objects.get(name='Customer')
 			customer_group.user_set.add(signup_user)
 			password = form.cleaned_data.get('password1')
+			# once the user is created it will do an auhtenticate or better said a login by taking the username and the password variables 
 			user = authenticate(username=username, password=password)
 			login(request, user)
 	else:
